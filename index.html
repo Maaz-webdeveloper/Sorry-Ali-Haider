@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Ali Haider 💔</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8b0b0, #ffe4e1);
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            padding: 30px;
+            border: 2px solid #ff6b6b;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            animation: popIn 0.5s ease-in-out;
+            position: relative;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .title {
+            font-size: 2.5em;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5;
+        }
+        .emoji {
+            font-size: 2em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background-color: #ff4c4c;
+            transform: scale(1.05);
+        }
+        /* Popup message style */
+        .popup {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #28a745;
+            font-weight: bold;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: rgba(40, 167, 69, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Animated Heart */
+        .love-emoji {
+            display: none;
+            font-size: 3em;
+            margin-top: 15px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .thanks-text {
+            display: none;
+            font-size: 1.5em;
+            color: #28a745;
+            margin-top: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .promise-text {
+            display: none;
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">I'm Sorry, Ali Haider 💔</div>
+        <div class="emoji">😔🙏</div>
+        <div class="message">
+            Ali Haider, I know I made a mistake, and I regret it deeply. 💬
+            Can you find it in your heart to forgive me? ❤️
+        </div>
+        <button class="button" onclick="forgiveMe()">Forgive Me 🥺</button>
+        <div id="popupMessage" class="popup">Shukriya, Ali Haider! Aapne mujhe maaf kar diya. 🥹</div>
+        <div id="loveEmoji" class="love-emoji">❤️</div>
+        <div id="thanksText" class="thanks-text">Thanks! 🥰</div>
+        <div id="promiseText" class="promise-text">I promise you, it won't happen again! 🙏</div>
+    </div>
+
+    <script>
+        function forgiveMe() {
+            document.getElementById("popupMessage").style.display = "block";
+            document.getElementById("loveEmoji").style.display = "block"; // Show the love emoji
+            document.getElementById("thanksText").style.display = "block"; // Show the thanks text
+            document.getElementById("promiseText").style.display = "block"; // Show the promise text
+        }
+    </script>
+</body>
+</html>
